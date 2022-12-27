@@ -11,5 +11,7 @@
     "nuxt": "3.0.0",
     "sass": "^1.57.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "vuetify": "^3.0.6"
+  }
 }

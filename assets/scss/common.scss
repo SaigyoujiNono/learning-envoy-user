@@ -1,0 +1,19 @@
+
+// px
+$list: 2,4,5,6,8,10,12,14,15,16,18,20;
+
+// 方向
+$directs: (
+  l: "left", r: "right", b: "bottom", t: "top"
+);
+
+@each $px in $list {
+  @each $direct in map-keys($directs) {
+    .p#{$direct}#{$px} {
+      padding-#{map-get($directs,$direct)}: #{$px}px;
+    }
+    .m#{$direct}#{$px} {
+      margin-#{map-get($directs,$direct)}: #{$px}px;
+    }
+  }
+}

@@ -18,5 +18,14 @@ export default defineNuxtConfig({
   // typescript类型检查
   typescript: {
     strict: true
+  },
+  css: ["vuetify/lib/styles/main.sass", '@/assets/scss/common.scss'],
+  build: {
+    transpile: ["vuetify"]
+  },
+  vite: {
+    define: {
+      "process.env.DEBUG": false
+    }
   }
 })
