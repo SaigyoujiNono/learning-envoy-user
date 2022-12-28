@@ -9,3 +9,12 @@ html, body, div {
   flex: 1 1 auto;
   margin: 0px;
 }
+
+// 页面常规样式
+.app-main {
+  width: 1200px;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
