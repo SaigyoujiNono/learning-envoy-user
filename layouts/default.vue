@@ -1,11 +1,11 @@
 <template>
   <v-app>
-      <Header />
-        <div class="app-main">
-          <slot />
-        </div>
-      <Footer />
-    </v-app>
+    <Header />
+      <div class="app-main">
+        <slot />
+      </div>
+    <Footer />
+  </v-app>
 </template>
 
 <style lang="scss" scoped>
