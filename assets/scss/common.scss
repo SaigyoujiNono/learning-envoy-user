@@ -9,6 +9,9 @@ $directs: (
 
 @each $px in $list {
   @each $direct in map-keys($directs) {
+    .p#{$px} {
+      padding: #{$px}px;
+    }
     .p#{$direct}#{$px} {
       padding-#{map-get($directs,$direct)}: #{$px}px;
     }

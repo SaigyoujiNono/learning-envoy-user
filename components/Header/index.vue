@@ -2,25 +2,25 @@
   <div class="header">
     <div class="header-container">
       <div class="header-logo-box">
-        <NuxtLink to="/">
+        <NuxtLink :to="HOME_PAGE">
           <span class="header-logo">学习使者</span>
         </NuxtLink>
       </div>
       <div class="header-right-menu">
         <div class="menu-item">
-          <NuxtLink to="/">首页</NuxtLink>
+          <NuxtLink :to="HOME_PAGE">首页</NuxtLink>
         </div>
         <div class="menu-item">
-          <NuxtLink to="/specialty">专业库</NuxtLink>
+          <NuxtLink :to="SPECIALTY_PAGE">专业库</NuxtLink>
         </div>
         <div class="menu-item">
-          <NuxtLink to="/knowledge">知识库</NuxtLink>
+          <NuxtLink :to="KNOWLEDGE_PAGE">知识库</NuxtLink>
         </div>
         <div class="menu-item">
-          <NuxtLink to="/school">校园圈</NuxtLink>
+          <NuxtLink :to="SCHOOL_PAGE">校园圈</NuxtLink>
         </div>
         <div class="menu-item">
-          <NuxtLink to="/register">登记/注册</NuxtLink>
+          <NuxtLink :to="REGISTER_PAGE">登记/注册</NuxtLink>
         </div>
       </div>
     </div>
@@ -28,6 +28,9 @@
   </div>
 </template>
 
+<script setup lang="ts">
+  import { REGISTER_PAGE, SCHOOL_PAGE, KNOWLEDGE_PAGE, SPECIALTY_PAGE, HOME_PAGE } from '@/constant/address'
+</script>
 
 <style lang="scss" scoped>
 .header {

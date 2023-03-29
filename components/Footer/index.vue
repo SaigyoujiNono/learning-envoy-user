@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="bg-grey-lighten-1" height="100px">
+  <v-footer class="foot-container" height="100px">
     <v-row>
       <v-col>
         <div class="footer-content">
@@ -16,18 +16,26 @@
 </script>
 
 <style lang="scss" scoped>
-p {
-  font-family: 'Arial Normal', 'Arial';
-  font-weight: 400;
-  font-style: normal;
-  font-size: 13px;
-  letter-spacing: normal;
-  color: #333333;
+.foot-container {
+  background-color: #323232;
+  p {
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    letter-spacing: normal;
+    color: #cfcfcf;
+    
+    &:first-child {
+      color: #ffffff;
+    }
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+
 </style>
