@@ -10,14 +10,6 @@
             </div>
           </v-col>
           <v-col cols="3">
-            <div class="search-ground">
-              <v-autocomplete
-                label="搜索"
-                :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"
-                hide-no-data
-                hide-details
-              ></v-autocomplete>
-            </div>
           </v-col>
         </v-row>
       </div>
